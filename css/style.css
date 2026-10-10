@@ -1,0 +1,4 @@
+body { background: #f8f9fa; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+#flash { position: fixed; top: 70px; right: 16px; z-index: 2000; max-width: 360px; }
+.p-img { height: 200px; object-fit: contain; background: #fff; padding: .5rem; }
+.thumb { width: 48px; height: 48px; object-fit: contain; background: #fff; border: 1px solid #dee2e6; border-radius: 4px; }

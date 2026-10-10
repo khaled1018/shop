@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - ShopHub</title>
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="navbar"></div>
+  <div id="message"></div>
+
+  <main class="container py-4">
+    <div class="row justify-content-center"><div class="col-md-5">
+      <h2>Login</h2>
+      <form id="login-form" novalidate>
+        <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control" id="email" type="email"><div class="invalid-feedback" id="email-error"></div></div>
+        <div class="mb-3"><label class="form-label" for="password">Password</label><input class="form-control" id="password" type="password"><div class="invalid-feedback" id="password-error"></div></div>
+        <button class="btn btn-primary w-100">Login</button>
+      </form>
+      <p class="mt-3 small">No account? <a href="register.html">Register</a><br>Demo admin: admin@shop.com / Admin123</p>
+    </div></div>
+  </main>
+
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Categories - ShopHub</title>
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="navbar"></div>
+  <div id="message"></div>
+
+  <main class="container py-4">
+    <h2 class="mb-3">Categories</h2>
+    <form id="category-form" novalidate class="card card-body mb-4 col-md-6">
+      <h5 id="form-title">Add category</h5>
+      <div class="mb-3"><label class="form-label" for="name">Name</label><input class="form-control" id="name"><div class="invalid-feedback" id="name-error"></div></div>
+      <div><button class="btn btn-primary" id="save-btn">Add</button> <button type="button" class="btn btn-link d-none" id="cancel-btn">Cancel</button></div>
+    </form>
+    <table class="table bg-white">
+      <thead><tr><th>ID</th><th>Name</th><th>Products</th><th></th></tr></thead>
+      <tbody id="categories-table"></tbody>
+    </table>
+  </main>
+
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/admin-categories.js"></script>
+</body>
+</html>

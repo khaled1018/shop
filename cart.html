@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart - ShopHub</title>
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="navbar"></div>
+  <div id="message"></div>
+
+  <main class="container py-4">
+    <h2 class="mb-3">Shopping Cart</h2>
+    <p class="text-muted d-none" id="empty-cart">Your cart is empty. <a href="index.html">Continue shopping</a></p>
+    <div id="cart-content">
+      <div class="table-responsive">
+        <table class="table align-middle bg-white">
+          <thead><tr><th>Product</th><th>Price</th><th style="width:110px">Qty</th><th>Subtotal</th><th></th></tr></thead>
+          <tbody id="cart-rows"></tbody>
+        </table>
+      </div>
+      <div class="text-end fs-5 mb-3">Total: <strong id="cart-total"></strong></div>
+      <form id="order-form" novalidate class="card card-body col-md-6">
+        <div class="mb-3"><label class="form-label" for="phone">Phone</label><input class="form-control" id="phone" type="tel"><div class="invalid-feedback" id="phone-error"></div></div>
+        <div class="mb-3"><label class="form-label" for="address">Shipping address</label><input class="form-control" id="address"><div class="invalid-feedback" id="address-error"></div></div>
+        <button class="btn btn-success">Place order</button>
+        <small class="text-muted mt-2">Your order stays pending until an admin confirms it.</small>
+      </form>
+    </div>
+  </main>
+
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
